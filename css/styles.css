@@ -3,9 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
+.source-code-pro-{
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #ffffff;
   color: #ffffff;
@@ -31,12 +42,8 @@ button:focus {
 }
 
 .container {
-  display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -62,14 +69,18 @@ header {
 
 main {
   grid-area: main;
-  margin-top: 20px;
-  margin-bottom: 140px;
+  margin: 0px;
+  background-image: url('../assets/background_2.png');
+  background-position: center;
+  background-size: 15%;
+  flex: 1;
 }
 
 footer {
   grid-area: footer;
-  position: absolute;
+  position: auto;
   bottom: 0;
+  text-align: center;
 }
 
 .hide {
@@ -84,6 +95,8 @@ footer {
   padding: 25px;
   border: 1px solid #e0e0e0;
   box-shadow: 7px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 30px;
 }
 
 #quizz-container,
