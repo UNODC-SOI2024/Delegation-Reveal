@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNODC Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>What is my delegation? An UNODC Quiz</h1>
+      </header>
+      <main>
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number">1</span> &#8212;
+            <span id="question-text">Qual é a unidade de medida para metros?</span>
+          </p>
+          <div id="answers-box">
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          </div>
+        </div>
+
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+          <p>Congratulations, you shall have the honor to represent:</p>
+          <h2 id="display-score"><span></span></h2>
+          <button id="restart">Check again!</button>
+        </div>
+
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide">
+          <span class="btn-letter"></span><span class="question-answer"></span>
+        </button>
+      </main>
+      <footer>
+        <p>
+          <strong>Copyright</strong> &copy; 2024
+          <a><strong>United Nations Office for Drugs and Crime</strong></a> /
+          <a><strong>Simulação de Organizações Internacionais XXIII</strong></a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
